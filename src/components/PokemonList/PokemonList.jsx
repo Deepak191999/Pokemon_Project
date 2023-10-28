@@ -4,6 +4,7 @@ import "./PokemonList.css";
 import Pokemon from "../Pokemon/Pokemon";
 
 
+
 function PokemonList() {
  
   const [pokemonList, setPokemonList] = useState([]);
@@ -61,7 +62,7 @@ function PokemonList() {
     <div className="pokemon-list-wrapper">
       <div className="pokemon-wrapper">
       {(isLoading) ? 'Loading....' :
-         pokemonList.map((p) => <Pokemon name={p.name} image={p.image} key={p.id}/>)
+         pokemonList.map((p) => <Pokemon name={p.name} image={p.image} key={p.id} id={p.id}/>)
           }
       </div>
       <div className="controls">
