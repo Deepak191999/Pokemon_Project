@@ -10,8 +10,7 @@ function Pokemon({name, image, id}) {
             <img className='pokemon-image' src={image} /></div>
         </Link>
       </div>
-      
-  
+
   )
 }
 export default Pokemon;
