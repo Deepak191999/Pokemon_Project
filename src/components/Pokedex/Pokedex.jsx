@@ -1,12 +1,20 @@
 import Search from "../Search/Search"
 import PokemonList from "../PokemonList/PokemonList"
 import './Pokedex.css'
+import { useState } from "react"
+import PokemonDetails from "../PokemonDetails/PokemonDetails";
+
 function Pokedex(){
-return(
+
+    const[searchTerm,setSearchTerm] = useState('');
+
+  return(
     <div className="pokedex-wrapper">
-        <Search />
-        <PokemonList/>
+        <Search updateSearchTerm = {setSearchTerm} />
+        {(!searchTerm) ? <PokemonList/> : < PokemonDetails key={searchTerm} pokemonName = {searchTerm} />}
     </div>
-)
+   )
+   //debouncing
+
 }
-export default Pokedex
+export default Pokedex;

@@ -22,7 +22,7 @@ function usePokemonList( ) {
   
       const pokemonResults = response.data.results; //upr ulr ke promises (we get arr of pokemon from result)
   
-      console.log("response is=>",response.data.pokemon);
+      // console.log("response is=>",response.data.pokemon);
   
       //queueing a series of state update
       setPokemonListState((state) => ({
