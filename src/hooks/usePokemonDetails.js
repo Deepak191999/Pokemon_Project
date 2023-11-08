@@ -18,6 +18,7 @@ function usePokemonDetails(id,pokemonName) {
       );
       setPokemon ({
         name: response.data.name,
+        // image: response.data.sprites.other.dream_world.front_default,
         image: response.data.sprites.other.dream_world.front_default,
         weight: response.data.weight,
         height: response.data.height,

@@ -46,9 +46,9 @@ function usePokemonList( ) {
         return {
           id: pokemon.id,
           name: pokemon.name,
-          image: pokemon.sprites.other
-            ? pokemon.sprites.other.dream_world.front_default
-            : pokemon.sprites.front_shiny,
+          image: pokemon.sprites.other.dream_world.front_default,
+            // ? pokemon.sprites.other.dream_world.front_default
+            // : pokemon.sprites.front_shiny,
           types: pokemon.types,
         };
       });
